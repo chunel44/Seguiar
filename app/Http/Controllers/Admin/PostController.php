@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Category;
 use App\Post;
-use Brian2694\Toastr\Toastr;
+use Brian2694\Toastr\Facades\Toastr;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -77,6 +77,13 @@ class PostController extends Controller
         return view('admin.post.show',compact('post'));
     }
 
+    public function edit(Post $post)
+    {
+        $categories = Category::all();
+
+        return view('admin.post.edit',compact('post','categories'));
+    }
+
     public function update(Request $request, Post $post)
     {
         $image = $request->file('image');
@@ -108,7 +115,7 @@ class PostController extends Controller
         $post->slug = $slug;
         $post->file = $imageName;
         $post->body = $request->body;
-        $post->category_id = $request->category_id;
+        $post->category_id = 1;
         if(isset($request->status))
         {
             $post->status = 'PUBLISHED';

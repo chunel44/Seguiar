@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $data = Post::orderBy('id', 'DESC')->paginate(5);
+        $data = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(5);
         return response()->json($data);
     }
     public function show($slug)

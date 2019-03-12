@@ -18,7 +18,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
         <div class="user">
             <a href="">
                 <div class="photo">
-                    <img src="#">
+                    <img src="{{asset('frontend/img/home/seguiar2.png')}}">
                 </div>
             </a>
             <div class="info">
@@ -32,12 +32,6 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <a href="{{ route('admin.dashboard') }}">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
-                </a>
-            </li>
-            <li class="{{ Request::is('admin/category*') ? 'active' : null }}">
-                <a href="{{ route('admin.category.index') }}">
-                    <i class="material-icons">timeline</i>
-                    <p>Categorías</p>
                 </a>
             </li>
             <li class="{{ Request::is('admin/post*') ? 'active' : null }}">
