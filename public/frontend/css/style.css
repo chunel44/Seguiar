@@ -1,0 +1,622 @@
+/*
+   ____  _                          _    ___  ____  
+  / ___|| |__   _   _  _ __    ___ | |  / _ \|___ \ 
+ | |    | '_ \ | | | || '_ \  / _ \| | | | | | __) |
+ | |___ | | | || |_| || | | ||  __/| | | |_| |/ __/ 
+  \____||_| |_| \__,_||_| |_| \___||_|  \___/|_____|
+
+*/
+
+/*Navbar y Header*/
+.navbar {
+  min-height: 110px;
+  box-shadow: 1px 1px 3px #0003;
+  z-index: 1000;
+  background: #fff;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 110px;
+  line-height: 80px;
+}
+
+.cd-auto-hide-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  transition: transform .5s;
+}
+.cd-auto-hide-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-nav .nav-link {
+  color: #707070;
+  font-size: 15px;
+  font-family: AvenirBlack;
+}
+
+.nav-item > .nav-link.active {
+  border-bottom: 2px solid #0e8472;
+}
+
+.nav-item > a:hover {
+  color: #0e8472;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0e8472;
+}
+
+.navbar-nav > li {
+  position: relative;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  background-color: #f4d04f;
+}
+
+.carousel-indicators .active {
+  background-color: #10856f;
+}
+
+.navbar-nav > li.prod {
+  left: 132px;
+}
+
+.navbar-nav > li.proy {
+  left: 295px;
+}
+
+.navbar-nav > li.cont {
+  right: 295px;
+}
+
+.navbar-nav > li.noti {
+  right: 132px;
+}
+
+@media (min-device-width:991px) and  (max-width:1280px) {
+  .navbar-nav > li.prod {
+    left: 0px;
+  }
+
+  .navbar-nav > li.proy {
+    left: 65px;
+  }
+
+  .navbar-nav > li.cont {
+    right: 65px;
+  }
+
+  .navbar-nav > li.noti {
+    right: 0px;
+  }
+
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: -15px;
+  left: 75%;
+  margin-left: -16px;
+  display: block;
+  width: 46px;
+  height: 32px;
+  background: #fff;
+  background-size: 14px auto;
+  border-radius: 45%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid #707070;
+  border-width: 0px 0 2px 2px;
+}
+
+/*Main y Section*/
+.wrapper2 {
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  left: 0;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+.wrapper3{
+  padding-top: 110px;
+}
+
+.section {
+
+  /*padding: 70px 0;*/
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.section-yellow {
+  background: rgba(242, 199, 43, 0.83);
+}
+
+.quienes {
+  background: #F4F4F4;
+}
+
+.svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6vw;  /* set height to pixels if you want angle to change with screen width */
+}
+
+.text-box {
+  width: 98px;
+  height: 99%;
+  position: relative;
+  left: 50%;
+  background: #10856F;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.somos {
+  height: 63vh;
+}
+
+.productos-grid{
+  margin: 35px 0px 0px 0px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-producto {
+  font-family: 'AvenirBlack';
+  font-size: 28px;
+  color: #313131;
+  padding: 15px 35px 0px;
+  text-align: center;
+}
+
+.texto-producto {
+  font-family: 'AvenirLightO';
+  font-size: 18px;
+  color: #707070;
+  padding: 25px 35px;
+  text-align: justify;
+}
+
+.btn-productos {
+  background: #1F9981;
+  border-color: #1F9981;
+  color: #fff;
+  font-family: 'AvenirBlack';
+  font-size: 20px;
+}
+
+.btn-productos::after {
+  border-right: 20px solid transparent;
+  right: -20px;
+}
+
+.btn-productos:hover {
+  background: #206C51;
+}
+
+.box-prod {
+  background: #F4F4F4;
+}
+
+.text-box > p {
+  color: #F4F4F4;
+  text-align: center;
+  font-family: 'AvenirBlack';
+  transform: rotate(-90deg);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  top: 40%;
+  right: 135%;
+  bottom: 0;
+  width: -moz-max-content;
+  font-size: 38px;
+  margin-bottom: 0;
+}
+
+.info {
+  padding-top: 140px;
+  font-size: 28px;
+  font-family: 'AvenirMedium';
+  width: 80%;
+  text-align: justify;
+}
+
+.titulo {
+  color: #10856F;
+  font-size: 45px;
+  font-family: 'AvenirBlack';
+}
+
+.productos {
+  position: relative;
+  bottom: 15px;
+}
+
+.productos::after {
+  content: "";
+  position: absolute;
+  width: 52%;
+  top: 50%;
+  margin-left: 10%;
+  border-top: 3px solid #10856F;
+}
+
+.full-width {
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+}
+
+@media (min-width:768px) {
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .info {
+    padding-top: 90px;
+  }
+
+}
+
+.main {
+  background: #FFFFFF;
+  position: relative;
+  z-index: 3;
+}
+
+.main-raised {
+  margin: -60px 30px 0px;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/*Galery*/
+.gal {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+.gal img {
+  width: 100%;
+  padding: 7px 0;
+}
+
+@media (max-width:500px) {
+  .gal {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+
+}
+figure{
+  background: #f4d04f;
+}
+
+figure img{
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+figure:hover img {
+  opacity: .5;
+}
+
+
+/* Cards Noticias */
+.card-header1 {
+  color: #3C3C3C;
+  background: #797979;
+  font-family: 'AvenirBlack';
+  font-size: 45px;
+  border-bottom: 3px solid #5e5e5e;
+}
+
+.card1 {
+  border: none;
+  z-index: 3;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  margin: -60px 30px 0px;
+  background: #F7F7F7;
+  height: 430px;
+}
+
+.arr{
+  margin: -60px 30px 0px;
+}
+
+.card2 {
+  border: none;
+  z-index: 3;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background: #F7F7F7;
+  height: 430px;
+}
+
+.card{
+  border: none;
+  z-index: 3;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background: #F7F7F7;
+  margin-bottom: 25px;
+}
+
+.card-block{
+  height: 100%;
+}
+
+.row > .foto {
+  padding: 15px 0 0;
+}
+
+.img-not {
+  width: 100%
+}
+
+.row > .texto {
+  padding: 30px 0 0;
+}
+
+.headline {
+  height: 85px;
+  width: 70%;
+  color: #fff;
+  background: #FF6464;
+}
+.card-body{
+  padding-bottom: 0;
+}
+
+.head-texto {
+  padding-left: 15px;
+  color: #fff;
+  font-family: 'AvenirBlack';
+  font-size: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.noticia-texto {
+  color: #707070;
+  font-family: Helvetica;
+  font-size: 18px;  /*padding-left: 45px*/
+  text-align: justify;
+  padding: 15px 165px 0 35px;
+}
+
+.btn-mas {
+  color: #FF6464;
+  font-family: 'AvenirBlack';
+  font-size: 23px;
+  background: #F7F7F7;
+  position: relative;
+  float: right;
+}
+
+.btn-ver {
+  color: #707070;
+  font-family: 'AvenirBlack';
+  font-size: 23px;
+  background: #F7F7F7;
+  position: absolute;
+  right: 13px;
+  bottom: 1px;
+}
+
+.btn-mas:hover {
+  color: #10856F;
+}
+
+.btn-ver:hover {
+  color: #10856F;
+}
+
+
+.clientes {
+  padding-top: 85px;
+}
+
+.titulo-clientes {
+  font-family: 'AvenirBlack';
+  font-size: 45px;
+  color: #555555;
+  height: 100%;
+}
+
+.titulo-clientes::after {
+  content: "";
+  position: absolute;
+  width: 78%;
+  top: 50%;
+  margin-left: 3%;
+  border-top: 3px solid #555555;
+}
+
+.iconos-clientes img {
+  width: 100%;
+}
+
+.icn {
+  float: right;
+}
+
+.seg {
+  float: right;
+}
+
+@media all and (max-width:1050px) and (min-width:991px) {
+  .card1 {
+    width: 920px;
+  }
+
+}
+
+@media (max-width:768px) {
+  .card1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 610px;
+  }
+
+.card2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 610px;
+  }
+
+  .noticia-texto {
+    padding: 15px 35px;
+  }
+
+  .btn-mas {
+    width: inherit;
+  }
+
+  .row > .foto {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+  .img-not {
+    width: 100%
+  }
+
+  .titulo-clientes::after {
+    width: 17%;
+  }
+
+  .row > .texto {
+    padding: 0;
+  }
+
+  .headline {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .head-texto{
+    font-size: 35px;
+  }
+
+  .productos::after {
+    width: 28%;
+  }
+
+  .text-box {
+    width: 100%;
+    height: 25%;
+    left: 0;
+  }
+
+  .somos {
+    height: 100%;
+    padding-top: 25px;
+  }
+
+  .text-box > p {
+    transform: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100%;
+    right: 0;
+  }
+
+  .info {
+    padding: 25px 0;
+    width: 100%
+  }
+
+  .seg {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .texto-producto {
+    padding: 25px 35px 46px;
+  }
+
+}
+
+/* Footer */
+footer {
+  background: #074338;
+}
+
+.datos-footer {
+  color: #fff;
+  font-family: 'AvenirMedium';
+  font-size: 18px;
+}
+
+.seguiar {
+  width: 130px;
+}
+
+.footer-descripcion {
+  font-family: 'AvenirLightO';
+  font-size: 18px;
+  color: #fff;
+  padding-top: 15px;
+}
+
+/*
+www.seguiar.com
+ventas@seguiar.com 
+T – +52-614-415-3525 Ext. 106 
++52-614-486-6146 
+Chihuahua, México 
+@SeguiarMx
+*/

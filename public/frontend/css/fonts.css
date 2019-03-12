@@ -1,0 +1,64 @@
+
+@font-face {
+font-family: 'AvenirLight';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 35 Light'), url('../fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'AvenirLightO';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 35 Light Oblique'), url('../fonts/AvenirLTStd-LightOblique.woff') format('woff');
+}
+
+
+
+@font-face {
+font-family: 'AvenirMedium';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 65 Medium'), url('../fonts/AvenirLTStd-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'AvenirMediumO';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 65 Medium Oblique'), url('../fonts/AvenirLTStd-MediumOblique.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'AvenirHeavy';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 85 Heavy'), url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'AvenirHeavyO';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 85 Heavy Oblique'), url('../fonts/AvenirLTStd-HeavyOblique.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'AvenirBlack';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 95 Black'), url('../fonts/AvenirLTStd-Black.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'AvenirBlackO';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 95 Black Oblique'), url('../fonts/AvenirLTStd-BlackOblique.woff') format('woff');
+}
