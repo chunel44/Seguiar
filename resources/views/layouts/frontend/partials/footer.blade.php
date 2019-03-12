@@ -8,6 +8,7 @@
                 <p><a style="color: #fff; text-decoration: none;" href="tel:+526144866146"><i class="fas fa-mobile-alt  mr-3"></i> +52-614-486-6146</a></p>
                 <p><i class="fa-homemr-3"></i> Chihuahua, México</p>
                 <a style="color: #fff; text-decoration: none" target="_blank" href="https://www.facebook.com/SEGUIARMEX/"><p><i class="fab fa-facebook-f mr-3"></i>@SeguiarMx</p></a>
+                <a href="{{route('login')}}" style="text-decoration: none; color: #fff;"><p>Login <i class="fas fa-sign-in-alt"></i></p></a>
             </div>
             <div class="col-md-6 mb-md-0 mb-3">
                 <div class="row seg">
