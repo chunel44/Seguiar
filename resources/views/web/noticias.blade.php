@@ -1,5 +1,25 @@
 @extends('layouts.frontend.app')
 
+@section('css')
+<style>
+    footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 350px;
+    }
+</style>
+@endsection
+
 @section('content')
     <div class="wrapper3">
         <div style="padding: 35px 0;" id="app" class="section">

@@ -3,7 +3,7 @@
 @section('content')
     <header>
         <div class="productos-header" style="background-image: url('{{asset('frontend/img/seguiar_1.jpg')}}')">
-            <h1 class="text-uppercase productos-titulo">nuestros <br><p style="font-family: 'AvenirBlack';font-size: 60px;">productos</p></h1>
+            <h1 class="text-uppercase productos-titulo">nuestros <br><p class="mdsa">productos</p></h1>
 
             <div class="borderleft">
             </div>

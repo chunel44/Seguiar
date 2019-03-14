@@ -57,6 +57,7 @@
     @endforeach
     @endif
 </script>
+
 @yield('js')
 </body>
 </html>
