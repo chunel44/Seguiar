@@ -15,19 +15,7 @@
             <div class="container">
                 <div class="row">
                     <div class="prod-grid">
-                        <h2 class="text-uppercase prod1">placas de señalética en braile</h2>
-                    </div>
-                    <div class="col-md-12">
-                        <hr class="linea-productos">
-
-                        <p class="placas-info">Fabricadas en materiales de la más alta calidad como Aluconond y Acrilico.
-                            Letras en relieve o en Vinyl, con Rasters de acero inoxidable.
-                            Todo para garantizas un producto durable y estético.</p>
-
-                        <img class="img-producto" src="{{asset('frontend/img/seguiar_2.jpg')}}">
-                    </div>
-                    <div class="prod-grid">
-                        <h2 class="text-uppercase prod1">placas de señalética en braile</h2>
+                        <h2 class="text-uppercase prod1">guías<br>Podotáctiles</h2>
                     </div>
                     <div class="col-md-12">
                         <hr class="linea-productos">
@@ -38,7 +26,7 @@
                                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner" role="listbox">
                                                 @for($i = 1; $i <= 6; $i++)
-                                                <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/acero-inoxidable/'.$i.'.png')}}')">
+                                                <div class="ajustar carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/acero-inoxidable/'.$i.'.png')}}')">
                                                 </div>
                                                 @endfor
                                             </div>
@@ -66,7 +54,7 @@
                                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner" role="listbox">
                                                 @for($i = 1; $i <= 5; $i++)
-                                                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/caucho-sintetico/'.$i.'.jpg')}}')">
+                                                    <div class="ajustar carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/caucho-sintetico/'.$i.'.jpg')}}')">
                                                     </div>
                                                 @endfor
                                             </div>
@@ -94,7 +82,7 @@
                                         <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner" role="listbox">
                                                 @for($i = 1; $i <= 9; $i++)
-                                                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/plastico-tpu/'.$i.'.jpg')}}')">
+                                                    <div class="ajustar carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/plastico-tpu/'.$i.'.jpg')}}')">
                                                     </div>
                                                 @endfor
                                             </div>
@@ -124,7 +112,7 @@
                                         <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner" role="listbox">
                                                 @for($i = 1; $i <= 2; $i++)
-                                                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/concreto-poli/'.$i.'.png')}}')">
+                                                    <div class="ajustar carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/concreto-poli/'.$i.'.png')}}')">
                                                     </div>
                                                 @endfor
                                             </div>
@@ -152,7 +140,7 @@
                                         <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner" role="listbox">
                                                 @for($i = 1; $i <= 5; $i++)
-                                                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/plastico-abs/'.$i.'.png')}}')">
+                                                    <div class="ajustar carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/plastico-abs/'.$i.'.png')}}')">
                                                     </div>
                                                 @endfor
                                             </div>
@@ -180,7 +168,7 @@
                                         <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner" role="listbox">
                                                 @for($i = 1; $i <= 4; $i++)
-                                                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/caucho-sbr/'.$i.'.png')}}')">
+                                                    <div class="ajustar carousel-item {{ $i == 1 ? 'active' : '' }}" style="height:350px; background-image: url('{{asset('frontend/img/caucho-sbr/'.$i.'.png')}}')">
                                                     </div>
                                                 @endfor
                                             </div>
@@ -203,6 +191,19 @@
                                 </div>
                             </div>
                         </div>
+                        <img class="img-producto" src="{{asset('frontend/img/seguiar_2.jpg')}}">
+                    </div>
+                    <div class="prod-grid">
+                        <h2 class="text-uppercase prod1">placas de señalética en braile</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="linea-productos">
+
+                        <p class="placas-info">Fabricadas en materiales de la más alta calidad como Aluconond y Acrilico.
+                            Letras en relieve o en Vinyl, con Rasters de acero inoxidable.
+                            Todo para garantizas un producto durable y estético.</p>
+
+
                     </div>
                 </div>
             </div>

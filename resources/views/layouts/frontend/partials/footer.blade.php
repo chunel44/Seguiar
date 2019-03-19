@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-6 mb-md-0 mb-3">
                 <div class="row seg">
-                    <img class="seguiar " src="{{asset('frontend/img/logos/logo-seguiar.png')}}">
+                    <img class="seguiar " src="{{asset('frontend/img/logos/seguiar-blanco.png')}}">
                 </div>
                 <div class="row float-right">
                     <h3 class="footer-descripcion">

@@ -15,7 +15,8 @@ class HomeController extends Controller
     }*/
 
    public function index(){
-       return view('web.home');
+       $post = Post::inRandomOrder()->first();
+       return view('web.home', compact('post'));
    }
 
     public function noticias()

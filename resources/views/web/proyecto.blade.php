@@ -6,8 +6,8 @@
 
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                @for($i = 1; $i <= $prod->fotos; $i++)
-                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}" style="background-image: url('{{asset('frontend/img/'.$prod->proyectoNombre.'-'.$prod->proyectoLugar.'/'.$i.'.jpg')}}')"></div>
+                @for($i = 1; $i < $prod->fotos; $i++)
+                    <div class="covers carousel-item {{ $i == 1 ? 'active' : '' }}" style="background-image: url('{{asset('frontend/img/'.$prod->proyectoNombre.'-'.$prod->proyectoLugar.'/'.$i.'.jpg')}}')"></div>
                 @endfor
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -59,21 +59,21 @@
                 <div class="productos-grid">
                     <div style="margin:0;" class="row">
                         <div class="col-md-6 no-padding">
-                            <img class="full-width" src="{{asset('frontend/img/home/Braille.jpg')}}">
+                            <img class="full-width" src="{{asset('frontend/img/home/Podotactiles.jpg')}}">
                         </div>
                         <div class="col-md-6 no-padding box-prod">
-                            <h2 class="titulo-producto">PLACAS DE SEÑALÉTICA EN BRAILLE</h2>
-                            <h3 class="texto-producto">Fabricadas en materiales de la más alta calidad como Alucobond y Acrilico. Letras en relieve o en Vinyl, con Rasters de acero inoxidable. Todo para garantizar un producto durable y estético.</h3>
+                            <h2 class="titulo-producto">GUÍAS PODOTÁCTILES</h2>
+                            <h3 class="texto-producto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta viverra velit sed porta. Sed porttitor sodales risus id malesuada. Nam nec maximus risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</h3>
                             <a href="{{route('productos')}}" class="btn btn-ver">VER MÁS <i class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div style="margin:0;" class="row">
                         <div class="col-md-6 no-padding box-prod">
-                            <h2 class="titulo-producto">GUÍAS PODOTÁCTILES</h2>
-                            <h3 class="texto-producto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta viverra velit sed porta. Sed porttitor sodales risus id malesuada. Nam nec maximus risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi tristique quam id lectus eleifend tristique.</h3>
+                            <h2 class="titulo-producto">PLACAS DE SEÑALÉTICA EN BRAILLE</h2>
+                            <h3 class="texto-producto">Fabricadas en materiales de la más alta calidad como Alucobond, Acrilico, PVC y Plástico Ada. Letras en relieve o en Vinyl, con Rasters de acero inoxidable. Todo para garantizar un producto durable y estético.</h3>
                             <a href="{{route('productos')}}" class="btn btn-ver">VER MÁS <i class="fas fa-angle-right"></i></a>
                         </div>
-                        <div class="col-md-6 no-padding"><img class="full-width" src="{{asset('frontend/img/home/Podotactiles.jpg')}}"></div>
+                        <div class="col-md-6 no-padding"><img class="full-width" src="{{asset('frontend/img/home/Braille.jpg')}}"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -111,18 +111,18 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 foto text-center">
-                                    <img class="img-not" src="https://preview.ibb.co/i0PmHk/1.jpg">
+                                    <img class="img-not" src="{{$post->file}}">
                                 </div>
                                 <div class="col-md-6 texto">
                                     <div class="headline">
                                         <div class="head-texto">
-                                            HEADLINE 1
+                                            {{$post->name}}
                                         </div>
                                     </div>
                                     <div class="noticia-texto">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta viverra velit sed porta. Sed porttitor sodales risus id malesuada. Nam nec maximus risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi tristique quam id lectus eleifend tristique.
+                                        {{$post->excerpt}}
                                     </div>
-                                    <button class="btn btn-mas">MÁS <i class="fas fa-angle-right"></i></button>
+                                    <a href="{{route('noticia.details',['slug'=>$post->slug])}}" class="btn btn-mas">MÁS <i class="fas fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                     <div class="container-fluid">
                         <div class="iconos-clientes">
                             <div class="col-md-3 icn">
-                                <img src="{{asset('frontend/img/logos/bc.png')}}">
+                                <img style="position: relative;top: 50%;width: 135px;" src="{{asset('frontend/img/logos/bc.png')}}">
                             </div>
                             <div class="col-md-3 icn">
                                 <img src="{{asset('frontend/img/logos/EscudoPJF_Peque_Transp.png')}}">
@@ -148,7 +148,7 @@
                                 <img src="{{asset('frontend/img/logos/image001.png')}}">
                             </div>
                             <div class="col-md-3 icn">
-                                <img src="{{asset('frontend/img/logos/logCJFBandera_Lg_blue.png')}}">
+                                <img style="position: relative;top: 50%;width: 135px;" src="{{asset('frontend/img/logos/logCJFBandera_Lg_blue.png')}}">
                             </div>
                         </div>
                     </div>
@@ -157,10 +157,10 @@
                     <div class="container-fluid" style="margin-top: 60px;">
                         <div class="iconos-clientes">
                             <div class="col-md-4 icn">
-                                <img style="width: 30%;" src="{{asset('frontend/img/logos/logof.png')}}">
+                                <img style="width: 85px;" src="{{asset('frontend/img/logos/logof.png')}}">
                             </div>
                             <div class="col-md-4 icn">
-                                <img style="width: 100%;" src="{{asset('frontend/img/logos/scjn-logo.png')}}">
+                                <img style="width: 235px;position: relative;top: 50%;bottom: 50%;" src="{{asset('frontend/img/logos/scjn-logo.png')}}">
                             </div>
                             <div class="col-md-4 icn">
                                 <img  src="{{asset('frontend/img/logos/unnamed.jpg')}}">

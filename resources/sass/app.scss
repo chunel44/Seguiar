@@ -619,7 +619,7 @@ figure {
 }
 
 .iconos-clientes img {
-  width: 40%;
+  width: 100px;
   height: auto;
   position: relative;
   margin-left: auto;
@@ -836,23 +836,36 @@ figure {
 
 .proyectos-titulo{
    font-family: 'AvenirBlack';
-   font-size: 35px;
+   font-size: 50px;
    position: relative;
    top: 50%;
    transform: translateY(-50%);
    color: #fff;
    text-align: center;
+  text-shadow: 3px 2px 1px #0000004d;
+  @media (max-width: 768px) {
+    font-size: 35px;
+  }
  }
 .proyectos-subtitulo{
   font-family: 'AvenirLight';
-  font-size: 20px;
+  font-size: 30px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
   text-align: center;
+  text-shadow: 3px 2px 1px #0000004d;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 }
 
+.covers{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .proyectos-imagen{
   position: relative;
@@ -861,12 +874,14 @@ figure {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-
+  img{
+    object-fit: cover;
+  }
 }
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -874,14 +889,14 @@ figure {
 
 .centered-sub {
   position: absolute;
-  top: 58%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
 }
 
 .abajo{
-  margin-top: 80px;
+  margin-top: 60px;
   @media (max-width: 768px) {
     margin-top: 0;
   }
@@ -922,7 +937,9 @@ figure {
 .proyectos-nombre{
   color:#fff;
   font-family: 'AvenirBlack';
-  font-size: 35px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .proyectos-subnombre{
@@ -1041,6 +1058,13 @@ figure {
     width: 100%;
     height: 250px;
     margin-bottom: 50px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .ajustar{
+    background-size: contain;
+    background-position: center;
   }
 
   .titulo-cards{
@@ -1117,6 +1141,7 @@ figure {
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 75px;
+  text-shadow: 3px 2px 1px #0000004d;
   @media (max-width: 768px) {
     top: 50%;
     left: 50%;
@@ -1132,10 +1157,10 @@ figure {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #10856f;
+  color: #fff;
   font-size: 75px;
   text-align: center;
-  text-shadow: 1px 1px 0px #0000004d;
+  text-shadow: 3px 2px 1px #0000004d;
   @media (max-width: 768px) {
     top: 50%;
     left: 50%;
@@ -1197,7 +1222,7 @@ footer {
 }
 
 .seguiar {
-  width: 200px;
+  width: 250px;
 }
 
 .footer-descripcion {
