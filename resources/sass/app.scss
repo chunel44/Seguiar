@@ -99,24 +99,28 @@ body{
     left: 132px;
     @media (max-width: 990px) {
       left: 0;
+      width: max-content;
     }
   }
   &.proy {
     left: 295px;
     @media (max-width: 990px) {
       left: 0;
+      width: max-content;
     }
   }
   &.cont {
     right: 295px;
     @media (max-width: 990px) {
       left: 0;
+      width: max-content;
     }
   }
   &.noti {
     right: 132px;
     @media (max-width: 990px) {
       left: 0;
+      width: max-content;
     }
   }
 }
@@ -505,6 +509,10 @@ figure {
 .marg-card{
   margin-left: 320px;
   margin-right: 320px;
+  @media (max-width: 1530px) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .card-block {

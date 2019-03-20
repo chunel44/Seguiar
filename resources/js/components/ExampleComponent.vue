@@ -8,7 +8,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6 foto text-center">
-                    <img class="img-not" v-bind:src="item.file">
+                    <img class="img-not" v-bind:src="'post/'+item.file">
                 </div>
                 <div class="col-md-6 texto">
                     <div class="headline">

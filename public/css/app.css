@@ -110,6 +110,9 @@ body {
 @media (max-width: 990px) {
   .navbar-nav > li.prod {
     left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
@@ -120,6 +123,9 @@ body {
 @media (max-width: 990px) {
   .navbar-nav > li.proy {
     left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
@@ -130,6 +136,9 @@ body {
 @media (max-width: 990px) {
   .navbar-nav > li.cont {
     left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
@@ -140,6 +149,9 @@ body {
 @media (max-width: 990px) {
   .navbar-nav > li.noti {
     left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
@@ -550,6 +562,13 @@ figure:hover img {
 .marg-card {
   margin-left: 320px;
   margin-right: 320px;
+}
+
+@media (max-width: 1530px) {
+  .marg-card {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .card-block {

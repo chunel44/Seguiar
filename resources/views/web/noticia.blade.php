@@ -2,7 +2,7 @@
 
 @section('content')
     <header class="wrapper3">
-        <div class="noticia-header" style="background-image: url('{{$post->file}}')">
+        <div class="noticia-header" style="background-image: url('../post/{{$post->file}}')">
             <div class="headline-noticia">
                 <div class="head-texto2">
                     NOTICIAS
@@ -16,9 +16,10 @@
                 <div class="col-md-12">
                     <h2 class="titulo-noticia">{{$post->name}}</h2>
 
-                    <p class="contenido-noticia">
-                        {!! html_entity_decode($post->body) !!}
-                    </p>
+                    <div class="contenido-noticia">
+                        {!! $post->body !!}
+                    </div>
+
                 </div>
             </div>
         </div>

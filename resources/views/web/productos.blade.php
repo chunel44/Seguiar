@@ -44,7 +44,7 @@
                                         <h2 class="titulo-cards text-uppercase">
                                             acero inoxidable
                                         </h2>
-                                        <p class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual</p>
+                                        <p class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual.</p>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
                                         <h2 class="titulo-cards text-uppercase">
                                             caucho sintético
                                         </h2>
-                                        <p class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual</p>
+                                        <p class="info-cards">Las guías de caucho sintético marca SEGUIAR, proveen una superficie detectable en espacios públicos y accesos a rutas para invidentes y débiles visuales, están fabricadas con los más altos estándares de calidad.</p>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                                         <h2 class="titulo-cards text-uppercase">
                                             tpu poliuretano termoplástico
                                         </h2>
-                                        <p style="padding: 24px 20px;" class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual</p>
+                                        <p style="padding: 24px 20px;" class="info-cards">Las guías y botones de TPU (Poliuretano termoplástico) proveen las mismas ventajas estéticas que las fabricadas con acero inoxidable, pero a un precio más accesible.</p>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                                         <h2 class="titulo-cards text-uppercase">
                                             concreto polimérico
                                         </h2>
-                                        <p class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual</p>
+                                        <p class="info-cards">Las guías podotáctiles de concreto polimérico son diseñadas para instalarse sobre el piso en zonas peatonales de alto tráfico, así como baquetas, escuelas y plazas.</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                                         <h2 style="font-size: 23px" class="titulo-cards text-uppercase">
                                             Acrinolitino butadieno estireno (abs)
                                         </h2>
-                                        <p style="padding: 0 20px;" class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual</p>
+                                        <p style="padding: 0 20px;" class="info-cards">Las guías y botones de ABS son de un plástico muy resistente al impacto (golpes) proveen las mismas ventajas estéticas que las fabricadas con TPU, pero con un precio más accesible.</p>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@
                                         <h2 class="titulo-cards text-uppercase">
                                             Caucho sbr
                                         </h2>
-                                        <p class="info-cards">Las guías metálicas de acero inoxidable marca SEGUIAR, proveen de una superficie detestable para la orientación y ubicación de personas con discapacidad visual</p>
+                                        <p class="info-cards">Las guías podotáctiles de caucho SBR marca SEGUIAR son diseñadas para instalarse sobre el piso en parques y zonas de juego por su alta absorción al impacto, elasticidad y suvidad.</p>
                                     </div>
                                 </div>
                             </div>

@@ -8,15 +8,36 @@
         bottom: 0;
     }
 
+    @media (min-width: 1025px) {
+        body {
+            margin-bottom: 350px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        body {
+            margin-bottom: 550px;
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        body {
+            margin-bottom: 850px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            margin-bottom: 850px;
+        }
+    }
+
     html {
         position: relative;
         min-height: 100%;
     }
 
-    body {
-        /* Margin bottom by footer height */
-        margin-bottom: 350px;
-    }
+
 </style>
 @endsection
 

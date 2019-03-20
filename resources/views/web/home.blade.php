@@ -111,7 +111,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 foto text-center">
-                                    <img class="img-not" src="{{$post->file}}">
+                                    <img class="img-not" src="post/{{$post->file}}">
                                 </div>
                                 <div class="col-md-6 texto">
                                     <div class="headline">

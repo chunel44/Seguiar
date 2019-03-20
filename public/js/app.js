@@ -36895,7 +36895,10 @@ var render = function() {
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-6 foto text-center" }, [
-                _c("img", { staticClass: "img-not", attrs: { src: item.file } })
+                _c("img", {
+                  staticClass: "img-not",
+                  attrs: { src: "post/" + item.file }
+                })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6 texto" }, [
