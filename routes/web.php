@@ -21,6 +21,8 @@ Route::get('contacto', 'HomeController@contacto')->name('contacto');
 Route::get('proyectos', 'HomeController@proyectos')->name('proyectos');
 Route::get('productos', 'HomeController@productos')->name('productos');
 
+Route::post('contacto', 'HomeController@contactoP')->name('contacto.post');
+
 Route::get('proyectos/{proyecto}/{ciudad}', 'HomeController@proyecto')->name('proyectos.details');
 
 

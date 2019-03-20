@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <a class="btn btn-contacto">Enviar</a>
+                                <button onclick="realizaProceso()" class="btn btn-contacto">Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -98,4 +98,58 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+        function realizaProceso() {
+            let parametros = {
+                "nombre": $('[name="nombre"]').val(),
+                "empresa": $('[name="empresa"]').val(),
+                "tipo": $('[name="tipo"]').val(),
+                "telefono": $('[name="telefono"]').val(),
+                "email": $('[name="email"]').val(),
+                "ciudad": $('[name="ciudad"]').val(),
+                "estado": $('[name="estado"]').val(),
+                "nosotros": $('[name="nosotros"]').val(),
+                "ayudarte": $('[name="ayudarte"]').val()
+            };
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                data:  parametros, //datos que se envian a traves de ajax
+                url:   'contacto', //archivo que recibe la peticion
+                type:  'post',
+                dataType : "text",
+                success:  function (data) {
+                    toastr.info('Correo Enviado','Seguiar');
+                    $('[name="nombre"]').val('');
+                    $('[name="empresa"]').val('');
+                    $('[name="tipo"]').val('');
+                    $('[name="telefono"]').val('');
+                    $('[name="email"]').val('');
+                    $('[name="ciudad"]').val('');
+                    $('[name="estado"]').val('');
+                    $('[name="nosotros"]').val('');
+                    $('[name="ayudarte"]').val('');
+                },
+                error: function (xhr, status, response) {
+                    var error = jQuery.parseJSON(xhr.responseText);
+                    for(let k in error.message){
+                        toastr.error(error.message[k],'Seguiar');
+                    }
+                }
+            });
+        }
+
+        function printErrorMsg (msg) {
+            $.each( $.parseJSON(msg), function( key, value ) {
+                toastr.error(value[0],'Seguiar');
+            });
+        }
+
+    </script>
 @endsection
